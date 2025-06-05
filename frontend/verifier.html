@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lissi Verifier</title>
+    <script defer src="/static/verifier.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="/static/corporate.css">
+</head>
+<body>
+<div class="max-w-md mx-auto corporate-card p-4">
+    <div class="corporate-header" style="flex-direction: column; gap: 0.5rem; align-items: stretch;">
+        <div style="display: flex; align-items: center; gap: 1.5rem; justify-content: flex-start;">
+            <img src="/static/lissi-logo.svg" alt="Lissi Logo" class="corporate-logo"/>
+            <span>X</span>
+            <img src="/static/lissi-logo.svg" alt="Lissi Logo" class="corporate-logo"/>
+        </div>
+        <div style="margin-top: 0.5rem; text-align: center; width: 100%;">
+            <span>Lissi Connector Verifier</span>
+        </div>
+    </div>
+    <div class="mb-2">
+        <button id="verifyPID" class="corporate-btn-secondary px-4 py-2 rounded w-full">
+            Verify PID
+        </button>
+    </div>
+    <div class="mb-2">
+        <button id="verifyEHIC" class="corporate-btn-secondary px-4 py-2 rounded w-full">
+            Verify EHIC
+        </button>
+    </div>
+    <div class="mb-2">
+        <button id="verifyPDA1" class="corporate-btn-secondary px-4 py-2 rounded w-full">
+            Verify PDA1
+        </button>
+    </div>
+    <div class="mb-2">
+        <button id="checkPresentationResult" class="corporate-btn-primary px-4 py-2 rounded w-full">
+            Show Last Verification Result
+        </button>
+    </div>
+    <pre id="output" class="mt-4 bg-gray-200 p-2 rounded text-sm"></pre>
+</div>
+</body>
+</html>

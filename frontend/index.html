@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lissi Issuer</title>
+    <script defer src="/static/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="/static/corporate.css">
+</head>
+<body>
+<div class="max-w-md mx-auto corporate-card p-4">
+    <div class="corporate-header" style="flex-direction: column; gap: 0.5rem; align-items: stretch;">
+        <div style="display: flex; align-items: center; gap: 1.5rem; justify-content: flex-start;">
+            <img src="/static/lissi-logo.svg" alt="Lissi Logo" class="corporate-logo"/>
+            <span>X</span>
+            <img src="/static/lissi-logo.svg" alt="Lissi Logo" class="corporate-logo"/>
+        </div>
+        <div style="margin-top: 0.5rem; text-align: center; width: 100%;">
+            <span>Lissi Connector Interface</span>
+        </div>
+    </div>
+    <div class="mb-2">
+        <button id="checkStatus" class="corporate-btn-primary px-4 py-2 rounded hover:bg-blue-600 w-full">
+            Load Credential Templates
+        </button>
+    </div>
+    <div class="mb-2">
+        <button id="issueCredentialHoeger" class="corporate-btn-secondary px-4 py-2 rounded w-full">
+            Issue pre-configured PID (Hoeger)
+        </button>
+    </div>
+    <div class="mb-2">
+        <button id="issueCredentialCastaneda" class="corporate-btn-secondary px-4 py-2 rounded w-full">
+            Issue pre-configured PID (Castaneda)
+        </button>
+    </div>
+    <div class="mb-2">
+        <button id="issueCredentialGM" class="corporate-btn-secondary px-4 py-2 rounded w-full">
+            Issue pre-configured PID (Goeppert Mayer)
+        </button>
+    </div>
+    <div class="mb-2">
+        <button id="issueCredentialLM" class="corporate-btn-secondary px-4 py-2 rounded w-full">
+            Issue pre-configured PID (Meitner)
+        </button>
+    </div>
+    <div class="mb-2">
+        <button id="addHardcodedDocument" class="corporate-btn-primary px-4 py-2 rounded w-full">
+            Add Hardcoded Document
+        </button>
+    </div>
+    <div class="mb-2">
+        <input id="collectIdInputEHIC" type="text" placeholder="Collect ID (required for EHIC)"
+               class="corporate-input flex-1 px-2 py-2 rounded-1"/>
+        <button id="issueEHIC" class="corporate-btn-tertiary px-4 py-2 rounded w-full">
+            Issue EHIC
+        </button>
+    </div>
+    <div class="mb-2">
+        <input id="collectIdInputPDA1" type="text" placeholder="Collect ID (required for PDA1)"
+               class="corporate-input flex-1 px-2 py-2 rounded-1"/>
+        <button id="issuePDA1" class="corporate-btn-tertiary px-4 py-2 rounded w-full">
+            Issue PDA1
+        </button>
+    </div>
+    <div class="mb-2">
+        <button id="viewSessionMap" class="corporate-btn-primary px-4 py-2 rounded w-full">
+            View Session -> Collect ID Map
+        </button>
+    </div>
+    <div class="mb-2">
+        <button id="clearSessionMap" class="corporate-btn-danger px-4 py-2 rounded w-full">
+            Clear Session -> Collect ID Map
+        </button>
+    </div>
+    <pre id="output" class="mt-4 bg-gray-200 p-2 rounded text-sm"></pre>
+</div>
+</body>
+</html>

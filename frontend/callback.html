@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verification Result</title>
+    <script defer src="/static/callback.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="/static/corporate.css">
+</head>
+<body>
+<div class="max-w-md mx-auto corporate-card p-4">
+    <div class="corporate-header" style="flex-direction: column; gap: 0.5rem; align-items: stretch;">
+        <div style="display: flex; align-items: center; gap: 1.5rem; justify-content: flex-start;">
+            <img src="/static/lissi-logo.svg" alt="Lissi Logo" class="corporate-logo"/>
+            <span>X</span>
+            <img src="/static/lissi-logo.svg" alt="Lissi Logo" class="corporate-logo"/>
+        </div>
+        <div style="margin-top: 0.5rem; text-align: center; width: 100%;">
+            <span>Verification Result</span>
+        </div>
+    </div>
+    <pre id="callbackOutput" class="mt-4 bg-gray-200 p-2 rounded text-sm">Loading...</pre>
+</div>
+</body>
+</html>

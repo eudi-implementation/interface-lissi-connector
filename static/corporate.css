@@ -1,0 +1,88 @@
+body {
+    background-color: #ffffff;
+}
+
+.corporate-card {
+    background: #ffffff;
+    border-radius: 1rem;
+    border: 2px solid #4A4E52;
+    max-width: 700px;
+    width: 100%;
+}
+
+.corporate-header {
+    color: #083163; /* Dunkelblau (tertiary) */
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.corporate-btn-primary {
+    background: #4A4E52; /* Grau (primary) */
+    color: #fff;
+    border: none;
+}
+
+.corporate-btn-primary:hover {
+    background: #dadbdc;
+}
+
+.corporate-btn-secondary {
+    background: #D3DB2B; /* Gelb (secondary) */
+    color: #4A4E52;
+    border: none;
+}
+
+.corporate-btn-secondary:hover {
+    background: #F6F7D4;
+}
+
+.corporate-btn-tertiary {
+    background: #6983A1;
+    color: #fff;
+    border: none;
+}
+
+.corporate-btn-tertiary:hover {
+    background: #cbd9e7;
+    color: #4A4E52;
+}
+
+.corporate-btn-danger {
+    background: #C83337;
+    color: #fff;
+    border: none;
+}
+
+.corporate-btn-danger:hover {
+    background: #DB7A7D;
+}
+
+.corporate-input {
+    border: 1px solid #4A4E52;
+    background: #fff;
+    color: #4A4E52;
+}
+
+.corporate-label {
+    color: #4A4E52;
+    font-weight: 600;
+}
+
+.corporate-output {
+    background: #F6F7D4;
+    color: #4A4E52;
+    border: 1px solid #D3DB2B;
+}
+
+.corporate-logo {
+    height: 48px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
