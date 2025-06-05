@@ -1,0 +1,51 @@
+{
+  "presentationTemplateName": "PidPresentation",
+  "purpose": "Share your PID so that we can locate your credential",
+  "query": {
+    "credentials": {
+      "sd-jwt-pid": {
+        "format": "vc+sd-jwt",
+        "vct": "https://tenant.demo.connector.lissi.io/ID-Card-min",
+        "claims": [
+          {
+            "id": "first_name",
+            "path": [
+              "first_name"
+            ]
+          },
+          {
+            "id": "last_name",
+            "path": [
+              "last_name"
+            ]
+          },
+          {
+            "id": "authentic_source_person_id",
+            "path": [
+              "authentic_source_person_id"
+            ]
+          },
+          {
+            "id": "nationality",
+            "path": [
+              "nationality"
+            ]
+          },
+          {
+            "id": "birth_date",
+            "path": [
+              "birth_date"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "extractor": {
+    "first_name": "first_name",
+    "last_name": "last_name",
+    "authentic_source_person_id": "authentic_source_person_id",
+    "nationality": "nationality",
+    "birth_date": "birth_date"
+  }
+}

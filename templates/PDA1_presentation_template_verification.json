@@ -1,0 +1,105 @@
+{
+  "presentationTemplateName": "Pda1Presentation",
+  "purpose": "Share your PDA1",
+  "callBackUrl": "http://your.local.ip.address:8000/verifier/result",
+  "query": {
+    "credentials": {
+      "sd-jwt-pid": {
+        "format": "vc+sd-jwt",
+        "vct": "https://tenant.demo.connector.lissi.io/PDA1",
+        "claims": [
+          {
+            "id": "pda1_institution_id",
+            "path": [
+              "competent_institution",
+              "institution_id"
+            ]
+          },
+          {
+            "id": "pda1_institution_name",
+            "path": [
+              "competent_institution",
+              "institution_name"
+            ]
+          },
+          {
+            "id": "pda1_country_code",
+            "path": [
+              "competent_institution",
+              "country_code"
+            ]
+          },
+          {
+            "id": "pda1_starting_date",
+            "path": [
+              "decision_legislation_applicable",
+              "starting_date"
+            ]
+          },
+          {
+            "id": "pda1_ending_date",
+            "path": [
+              "decision_legislation_applicable",
+              "ending_date"
+            ]
+          },
+          {
+            "id": "pda1_member_state_which_legislation_applies",
+            "path": [
+              "decision_legislation_applicable",
+              "member_state_which_legislation_applies"
+            ]
+          },
+          {
+            "id": "pda1_transitional_rule_apply",
+            "path": [
+              "decision_legislation_applicable",
+              "transitional_rule_apply"
+            ]
+          },
+          {
+            "id": "pda1_nationality",
+            "path": [
+              "nationality"
+            ]
+          },
+          {
+            "id": "pda1_social_security_pin",
+            "path": [
+              "social_security_pin"
+            ]
+          },
+          {
+            "id": "pda1_unique_number_of_issued_document",
+            "path": [
+              "unique_number_of_issued_document"
+            ]
+          },
+          {
+            "id": "pda1_status_confirmation",
+            "path": [
+              "status_confirmation"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "extractor": {
+    "competent_institution": {
+        "institution_id": "pda1_institution_id",
+        "institution_name": "pda1_institution_name",
+        "country_code": "pda1_country_code"
+    },
+    "decision_legislation_applicable": {
+        "starting_date": "pda1_starting_date",
+        "ending_date": "pda1_ending_date",
+        "member_state_which_legislation_applies": "pda1_member_state_which_legislation_applies",
+        "transitional_rule_apply": "pda1_transitional_rule_apply"
+    },
+    "nationality": "pda1_nationality",
+    "social_security_pin": "pda1_social_security_pin",
+    "unique_number_of_issued_document": "pda1_unique_number_of_issued_document",
+    "status_confirmation": "pda1_status_confirmation"
+  }
+}

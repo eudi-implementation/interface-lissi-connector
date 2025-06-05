@@ -100,7 +100,7 @@ def view_session_map():
             return {"error": str(e)}
 
 
-@app.post("/EHIC2")
+@app.post("/EHIC")
 async def ehic_webhook(request: Request):
     data = await request.json()
     session_id = data.get("issuance").get("sessionId")
@@ -113,7 +113,7 @@ async def ehic_webhook(request: Request):
     return JSONResponse(result, status_code=200)
 
 
-@app.post("/PDA1-3")
+@app.post("/PDA1")
 async def pda1_webhook(request: Request):
     data = await request.json()
     session_id = data.get("issuance").get("sessionId")

@@ -1,0 +1,101 @@
+{
+  "presentationTemplateName": "EhicPresentation",
+  "purpose": "Share your EHIC",
+  "callBackUrl": "http://your.local.ip.address:8000/verifier/result",
+  "query": {
+    "credentials": {
+      "sd-jwt-pid": {
+        "format": "vc+sd-jwt",
+        "vct": "https://tenant.demo.connector.lissi.io/EHIC",
+        "claims": [
+          {
+            "id": "forename",
+            "path": [
+              "subject",
+              "forename"
+            ]
+          },
+          {
+            "id": "family_name",
+            "path": [
+              "subject",
+              "family_name"
+            ]
+          },
+          {
+            "id": "date_of_birth",
+            "path": [
+              "subject",
+              "date_of_birth"
+            ]
+          },
+          {
+            "id": "institution_id",
+            "path": [
+              "competent_institution",
+              "institution_id"
+            ]
+          },
+          {
+            "id": "institution_name",
+            "path": [
+              "competent_institution",
+              "institution_name"
+            ]
+          },
+          {
+            "id": "institution_country",
+            "path": [
+              "competent_institution",
+              "institution_country"
+            ]
+          },
+          {
+            "id": "starting_date",
+            "path": [
+              "period_entitlement",
+              "starting_date"
+            ]
+          },
+          {
+            "id": "ending_date",
+            "path": [
+              "period_entitlement",
+              "ending_date"
+            ]
+          },
+          {
+            "id": "social_security_pin",
+            "path": [
+              "social_security_pin"
+            ]
+          },
+          {
+            "id": "document_id",
+            "path": [
+              "document_id"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "extractor": {
+    "subject": {
+      "forename": "forename",
+      "family_name": "family_name",
+      "date_of_birth": "date_of_birth"
+    },
+    "competent_institution": {
+        "institution_id": "institution_id",
+        "institution_name": "institution_name",
+        "institution_country": "institution_country"
+    },
+    "period_entitlement": {
+        "starting_date": "starting_date",
+        "ending_date": "ending_date"
+    },
+    "social_security_pin": "social_security_pin",
+    "document_id": "document_id"
+  }
+}

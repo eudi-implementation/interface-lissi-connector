@@ -249,7 +249,7 @@ def issue_ehic_credential():
         url = f"{LISSI_API_BASE}issuance-sessions"
         payload = {
             "flow": {"authorizationCode": True},
-            "credentialTemplateName": "EHIC2",
+            "credentialTemplateName": "EHIC",
             "revocable": True
         }
         logging.info('Sending POST request to %s', url)
@@ -276,7 +276,7 @@ def issue_pda1_credential():
         url = f"{LISSI_API_BASE}issuance-sessions"
         payload = {
             "flow": {"authorizationCode": True},
-            "credentialTemplateName": "PDA1-3",
+            "credentialTemplateName": "PDA1",
             "revocable": True
         }
         logging.info('Sending POST request to %s', url)

@@ -5,6 +5,8 @@ Furthermore, it pulls the data for credentials from the [DC4EU datastore](https:
 
 Note that this repo will only run if you have access to a Lissi Connector Tenant.
 The tenant has to be configured correctly (credential & presentation templates; see [Lissi Docu](https://help.lissi.id)).
+Example templates for this repo are provided in `templates/` (replace "your.local.ip.address" and "tenant.demo.connector.lissi.io" with the correct values).
+These templates can be used as payload to the corresponding API-endpoints of the Lissi Connector.
 
 ## Running the Lissi Interface
 
