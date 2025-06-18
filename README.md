@@ -1,7 +1,7 @@
 # Interface for Lissi Connector
 
 This repository offers an interface for the [Lissi Connector](https://www.lissi.id/de/eudi-wallet-connector).
-Furthermore, it pulls the data for credentials from the [DC4EU datastore](https://github.com/dc4eu/vc).
+Furthermore, it pulls the data for credentials from the [DC4EU datastore](https://github.com/eudi-implementation/dc4eu-vc-minmod).
 
 Note that this repo will only run if you have access to a Lissi Connector Tenant.
 The tenant has to be configured correctly (credential & presentation templates; see [Lissi Docu](https://help.lissi.id)).
